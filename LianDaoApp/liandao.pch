@@ -1,0 +1,61 @@
+//
+//  liandao.pch
+//  liandao
+//
+//  Created by Steve on 2018/6/17.
+//  Copyright © 2018 HuaShun. All rights reserved.
+//
+
+
+#ifndef YJCHGloble_h
+#define YJCHGloble_h
+
+#define kDEVICEWIDTH  [UIScreen mainScreen].bounds.size.width
+#define kDEVICEHEIGHT  [UIScreen mainScreen].bounds.size.height
+#define kScreen_Frame  (CGRectMake(0, 0 , kDEVICEWIDTH,kDEVICEHEIGHT))
+#define iPhone4  [UIScreen mainScreen].bounds.size.height == 480
+#define iPhone5  [UIScreen mainScreen].bounds.size.height == 568
+#define iPhone6  [UIScreen mainScreen].bounds.size.height == 667
+#define iPhone6Plus  [UIScreen mainScreen].bounds.size.height == 736
+#define iPad    [UIScreen mainScreen].bounds.size.height > 736
+#define iOSVersion(version) ([[UIDevice currentDevice].systemVersion doubleValue] >= version)
+
+#define iOSVersion(version) ([[UIDevice currentDevice].systemVersion doubleValue] >= version)
+
+#define IOS8 ([[UIDevice currentDevice].systemVersion doubleValue] >= 8.0 && [[UIDevice currentDevice].systemVersion doubleValue] < 9.0)
+
+#define IOS8_10 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0 && [[UIDevice currentDevice].systemVersion doubleValue] < 10.0)
+
+#define IOS10 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 10.0)
+
+
+// - weak & strong
+#define myWeakify(VAR) \
+try {} @finally {} \
+__weak __typeof__(VAR) VAR##_myWeak_ = (VAR)
+
+#define myStrongify(VAR) \
+try {} @finally {} \
+__strong __typeof__(VAR) VAR = VAR##_myWeak_
+
+#define myStrongifyRetVIfNil(VAR, RET) \
+try {} @finally {} \
+__strong __typeof__(VAR) VAR = VAR##_myWeak_;\
+if(VAR == nil) return RET
+
+#define myStrongifyRetNIfNil(VAR) \
+try {} @finally {} \
+__strong __typeof__(VAR) VAR = VAR##_myWeak_;\
+if(VAR == nil) return
+
+
+#endif /* YJCHGloble_h */
+
+#ifdef DEBUG
+#define YJLog(...) NSLog(__VA_ARGS__)
+#else
+#define YJLog(...)
+#endif
+
+
+
