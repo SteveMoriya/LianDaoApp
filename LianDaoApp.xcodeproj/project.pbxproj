@@ -17,7 +17,7 @@
 		AA22509520E77D6F00505878 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA22508F20E77D6F00505878 /* ViewController.m */; };
 		AA22509620E77D6F00505878 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA22509020E77D6F00505878 /* AppDelegate.m */; };
 		AA22509820E77F4F00505878 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA22509720E77F4F00505878 /* LaunchScreen.storyboard */; };
-		AA2250A120E7878400505878 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = AA22509F20E7878400505878 /* Reachability.m */; };
+		AA2250A920E798E600505878 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = AA2250A720E798E600505878 /* Reachability.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,8 +40,8 @@
 		AA22509020E77D6F00505878 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AA22509720E77F4F00505878 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA22509920E77FC100505878 /* liandao.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = liandao.pch; sourceTree = "<group>"; };
-		AA22509F20E7878400505878 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
-		AA2250A020E7878400505878 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		AA2250A720E798E600505878 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		AA2250A820E798E600505878 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		B5CF9404A0023B74F4CBED93 /* libPods-LianDaoApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LianDaoApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -96,7 +96,7 @@
 		AA22508120E77D6E00505878 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				AA22509E20E7878400505878 /* Reachability */,
+				AA2250A620E798E600505878 /* Reachability */,
 				AA22508520E77D6E00505878 /* MapNavigationView */,
 				AA22508A20E77D6E00505878 /* MBProgressHUD */,
 			);
@@ -123,14 +123,13 @@
 			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
-		AA22509E20E7878400505878 /* Reachability */ = {
+		AA2250A620E798E600505878 /* Reachability */ = {
 			isa = PBXGroup;
 			children = (
-				AA22509F20E7878400505878 /* Reachability.m */,
-				AA2250A020E7878400505878 /* Reachability.h */,
+				AA2250A720E798E600505878 /* Reachability.m */,
+				AA2250A820E798E600505878 /* Reachability.h */,
 			);
-			name = Reachability;
-			path = ../../Reachability;
+			path = Reachability;
 			sourceTree = "<group>";
 		};
 		B75AFD76CDF673F28F03C536 /* Frameworks */ = {
@@ -245,7 +244,7 @@
 				AA22509520E77D6F00505878 /* ViewController.m in Sources */,
 				AA22509220E77D6F00505878 /* JXMapNavigationView.m in Sources */,
 				AA22509420E77D6F00505878 /* MBProgressHUD.m in Sources */,
-				AA2250A120E7878400505878 /* Reachability.m in Sources */,
+				AA2250A920E798E600505878 /* Reachability.m in Sources */,
 				AA22509320E77D6F00505878 /* CLLocation+YCLocation.m in Sources */,
 				AA22507B20E77C8200505878 /* main.m in Sources */,
 				AA22509620E77D6F00505878 /* AppDelegate.m in Sources */,
