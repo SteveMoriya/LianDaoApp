@@ -2,28 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>LSApplicationQueriesSchemes</key>
-	<array>
-		<string>baidumap</string>
-		<string>iosamap</string>
-	</array>
-	<key>NSCameraUsageDescription</key>
-	<string>连岛联动中心会在上传头像图片服务中访问您的相机权限</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>连岛联动中心会在上传头像图片服务中访问您的相机权限</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>连岛联动中心会在提交告警服务中访问您的定位权限</string>
-	<key>UIBackgroundModes</key>
-	<array>
-		<string>remote-notification</string>
-	</array>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSAllowsArbitraryLoads</key>
-		<true/>
-	</dict>
 	<key>CFBundleDevelopmentRegion</key>
-	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<string>zh_CN</string>
+	<key>CFBundleAllowMixedLocalizations</key>
+	<true/>
 	<key>CFBundleDisplayName</key>
 	<string>连岛联动中心</string>
 	<key>CFBundleExecutable</key>
@@ -39,9 +21,29 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>2</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>baidumap</string>
+		<string>iosamap</string>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>连岛联动中心会在上传头像图片服务中访问您的相机权限</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>连岛联动中心会在提交告警服务中访问您的定位权限</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>连岛联动中心会在上传头像图片服务中访问您的相机权限</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>remote-notification</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
