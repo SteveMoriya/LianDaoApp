@@ -79,7 +79,7 @@
     //    config.preferences.javaScriptEnabled = YES;
     
     _webView = [[WKWebView alloc] initWithFrame:CGRectMake(0, 0,  kDEVICEWIDTH, kDEVICEHEIGHT ) configuration:config];
-    //    [_webView sizeToFit];
+    [_webView sizeToFit];
     
     //设置显示内容，解决顶部状态栏问题
     if (@available(iOS 11.0, *)) {

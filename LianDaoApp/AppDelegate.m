@@ -59,7 +59,11 @@
     if (IOS10) {
         
         JPUSHRegisterEntity * entity = [[JPUSHRegisterEntity alloc] init];
-        entity.types = UNAuthorizationOptionAlert|UNAuthorizationOptionBadge|UNAuthorizationOptionSound;
+        if (@available(iOS 10.0, *)) {
+            entity.types = UNAuthorizationOptionAlert|UNAuthorizationOptionBadge|UNAuthorizationOptionSound;
+        } else {
+            // Fallback on earlier versions
+        }
         [JPUSHService registerForRemoteNotificationConfig:entity delegate:self];
     }
     else if (IOS8_10) {
@@ -75,6 +79,7 @@
                                                           UIRemoteNotificationTypeSound |
                                                           UIRemoteNotificationTypeAlert)
                                               categories:nil];
+        
     }
     
 #ifdef DEBUG
@@ -220,6 +225,11 @@ didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+    
+        [[UIApplication sharedApplication]setApplicationIconBadgeNumber:0];
+//        [application cancelAllLocalNotifications];
+        [JPUSHService resetBadge];
+    
 }
 
 

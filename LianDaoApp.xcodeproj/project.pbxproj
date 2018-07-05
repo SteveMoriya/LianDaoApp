@@ -380,6 +380,7 @@
 			baseConfigurationReference = 3163A465A0A9CAAE92A1C794 /* Pods-LianDaoApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H8UR4V8YF8;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LianDaoApp/liandao.pch";
@@ -391,6 +392,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.HuaShun.Liandao;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -400,6 +402,7 @@
 			baseConfigurationReference = 5227DBB903ABF2EF5435FF6B /* Pods-LianDaoApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H8UR4V8YF8;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LianDaoApp/liandao.pch";
@@ -411,6 +414,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.HuaShun.Liandao;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
