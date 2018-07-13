@@ -135,7 +135,6 @@
 //    window.webkit.messageHandlers.app.postMessage(dict);
 
     
-    
     //获取id方法
     if ([dic[@"function"] isEqualToString:@"gitUserID"] ) {
         
@@ -145,13 +144,13 @@
         if ([userIDString isEqualToString:@"null"] ) {
             
             [[NSUserDefaults standardUserDefaults] setObject:nil forKey:@"userid"];
+            
         } else {
             
              [[NSUserDefaults standardUserDefaults] setObject:userIDString forKey:@"userid"];
             
             //设置别名和tag
 //            [JPUSHService setTags:[NSSet setWithObject:userIDString] alias:userIDString fetchCompletionHandle:^(int iResCode, NSSet *iTags, NSString *iAlias) {
-//
 //            }];
             
             [JPUSHService setAlias:userIDString completion:^(NSInteger iResCode, NSString *iAlias, NSInteger seq) {

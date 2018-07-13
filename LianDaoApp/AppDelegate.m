@@ -40,6 +40,15 @@
 //    NSNotificationCenter *defaultCenter = [NSNotificationCenter defaultCenter];
 //    [defaultCenter addObserver:self selector:@selector(networkDidReceiveMessage:) name:kJPFNetworkDidLoginNotification object:nil];
     
+    NSString * userIDString = [[NSUserDefaults standardUserDefaults] objectForKey:@"userid"];
+    
+    if (userIDString == nil) {
+        
+    } else if (![userIDString isEqualToString:@"null"] ) {
+        
+        [JPUSHService setAlias:userIDString completion:^(NSInteger iResCode, NSString *iAlias, NSInteger seq) {
+        } seq:0];
+    }
     
     return YES;
 }
